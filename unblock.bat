@@ -75,9 +75,8 @@ set url="https://www.instagram.com/_alvi.an/"
 :pasang (
 	powershell -command "Invoke-WebRequest 'https://raw.githubusercontent.com/SecreSw/unblock/main/hosts' -OutFile 'hosts'"
 	
-	ipconfig /flushdns > nul
-	ipconfig /release > nul
-	ipconfig /renew > nul
+	ipconfig /flushdns
+
 
 	cls
 	echo.
